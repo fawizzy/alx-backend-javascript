@@ -6,14 +6,14 @@ export default async function handleProfileSignup (firstName, lastName, fileName
   const u = uploadPhoto(fileName)
 
   const vals = await Promise.allSettled([s, u])
-    const arr = []
-    vals.forEach((val) => {
-        if (val.status === 'fulfilled') {
-            arr.push({ status: val.status, value: val.value })
-        } else {
-            arr.push({ status: val.status, value: `Error: ${val.reason.message}`})
-        }
-    })
-    console.log(arr)
-    return arr
+  const arr = []
+  vals.forEach((val) => {
+    if (val.status === 'fulfilled') {
+      arr.push({ status: val.status, value: val.value })
+    } else {
+      arr.push({ status: val.status, value: `Error: ${val.reason.message}` })
+    }
+  })
+  console.log(arr)
+  return arr
 }
