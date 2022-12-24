@@ -32,7 +32,7 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    students.array.forEach((student) => {
+    students.forEach((student) => {
       if (typeof student !== 'string') {
         throw new TypeError('Name must be a string');
       }
