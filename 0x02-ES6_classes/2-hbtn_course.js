@@ -32,7 +32,7 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (!Array.isArray(students) === false) {
+    if (!Array.isArray(students)) {
       throw new TypeError('Name must be an array');
     }
     students.forEach((student) => {
