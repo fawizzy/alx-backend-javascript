@@ -4,7 +4,7 @@ export default function cleanset(set, startString) {
 
   if (startString && typeof startString === 'string') {
     for (const elem of set) {
-      if (startString && elem.startsWith(startString)) {
+      if (elem && elem.startsWith(startString)) {
         const word = elem.slice(startString.length);
         array.push(word);
       }
