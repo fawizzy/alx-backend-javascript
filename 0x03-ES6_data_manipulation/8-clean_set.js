@@ -9,8 +9,8 @@ export default function cleanset(set, startString) {
         array.push(word);
       }
     }
+    text = array.join('-');
   }
-  text = array.join('-');
 
   return text;
 }
