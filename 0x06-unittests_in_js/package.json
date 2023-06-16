@@ -1,0 +1,17 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "\"unit test in  js\"",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "\"fawaz\"",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.42.0",
+    "mocha": "^10.2.0",
+    "sinon": "^15.1.2"
+  }
+}
